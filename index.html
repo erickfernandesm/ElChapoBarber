@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Chapo Barber — Autoestima e estilo ao mais alto nível | Juiz de Fora</title>
+  <meta name="description" content="El Chapo Barber Premium — barbearia em Juiz de Fora/MG. Cortes, barba, sobrancelha e coloração com os melhores profissionais. Reserve seu horário pelo WhatsApp." />
+  <meta name="theme-color" content="#0a0a0a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="El Chapo Barber — Premium" />
+  <meta property="og:description" content="Autoestima e estilo elevado ao mais alto nível. Reserve seu horário." />
+  <meta property="og:image" content="Assets/logodourada.png" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/png" href="Assets/logodourada.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" aria-label="El Chapo Barber - início">
+        <img src="Assets/logobranca.png" alt="El Chapo Barber" />
+      </a>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#servicos" class="nav__link">Serviços</a></li>
+        <li><a href="#barbeiros" class="nav__link">Barbeiros</a></li>
+        <li><a href="#galeria" class="nav__link">Galeria</a></li>
+        <li><a href="#localizacao" class="nav__link">Localização</a></li>
+        <li><a href="#agendar" class="nav__link nav__link--cta">Reservar horário</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <img src="Assets/logobranca.png" alt="El Chapo Barber Premium" class="hero__logo" />
+      <p class="hero__eyebrow">Barbearia Premium · Juiz de Fora / MG</p>
+      <h1 class="hero__title">Autoestima e estilo elevado<br /><span>ao mais alto nível</span></h1>
+      <p class="hero__subtitle">Garanta a sua vaga e mude o seu visual hoje. Os barbeiros mais brabos da cidade, atendimento de verdade.</p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--gold">Reservar meu horário</a>
+        <a href="#barbeiros" class="btn btn--ghost">Escolher barbeiro</a>
+      </div>
+      <div class="hero__hours">
+        <span>🕗 Seg a Sex: 08h–20h</span>
+        <span>·</span>
+        <span>Sáb: 08h–16h</span>
+      </div>
+    </div>
+    <a href="#sobre" class="hero__scroll" aria-label="Rolar para baixo">▾</a>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat"><strong data-count="8000">8.000+</strong><span>Clientes satisfeitos</span></div>
+      <div class="stat"><strong data-count="5">5,0★</strong><span>Avaliação no Google</span></div>
+      <div class="stat"><strong>+10</strong><span>Anos de estilo</span></div>
+      <div class="stat"><strong>R$8</strong><span>Estacionamento ao lado</span></div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section class="section sobre" id="sobre">
+    <div class="container sobre__grid">
+      <div class="sobre__media reveal">
+        <img src="Assets/logodourada.png" alt="Selo El Chapo Premium" />
+      </div>
+      <div class="sobre__text reveal">
+        <p class="section__eyebrow">Quem somos</p>
+        <h2 class="section__title">Mais que um corte. Uma <span>experiência</span>.</h2>
+        <p>Na <strong>El Chapo Barber</strong> a gente não entrega só um corte — entrega autoestima. Ambiente premium, profissionais brabos e aquele atendimento que faz você voltar sempre.</p>
+        <p>Estamos no coração de Juiz de Fora, com estacionamento parceiro coberto e monitorado bem do lado da barbearia. Conforto e comodidade do começo ao fim.</p>
+        <ul class="sobre__list">
+          <li>Profissionais especialistas em cortes, barba e coloração</li>
+          <li>Ambiente climatizado e higienizado</li>
+          <li>Estacionamento parceiro (Cesar Park) a R$8</li>
+          <li>Agendamento rápido pelo WhatsApp</li>
+        </ul>
+        <a href="#agendar" class="btn btn--gold">Quero agendar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">O que fazemos</p>
+        <h2 class="section__title">Nossos <span>serviços</span></h2>
+        <p class="section__lead">Escolha o serviço e reserve com o barbeiro da sua preferência.</p>
+      </div>
+
+      <div class="servicos__grid" id="servicosGrid">
+        <!-- Preenchido via JS a partir do CONFIG -->
+      </div>
+
+      <p class="servicos__note">* Valores podem variar conforme o profissional e a complexidade do serviço.</p>
+    </div>
+  </section>
+
+  <!-- ===================== BARBEIROS ===================== -->
+  <section class="section barbeiros" id="barbeiros">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Nosso time</p>
+        <h2 class="section__title">Escolha seu <span>barbeiro</span></h2>
+        <p class="section__lead">Cada um com seu estilo. Arraste pro lado, escolha o seu e já chame no WhatsApp dizendo dia e horário.</p>
+      </div>
+
+      <div class="carousel reveal" id="barbeirosCarousel">
+        <button class="carousel__btn carousel__btn--prev" id="barbPrev" aria-label="Barbeiro anterior">‹</button>
+        <div class="carousel__track" id="barbeirosGrid">
+          <!-- Preenchido via JS a partir do CONFIG -->
+        </div>
+        <button class="carousel__btn carousel__btn--next" id="barbNext" aria-label="Próximo barbeiro">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section class="section galeria" id="galeria">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Nossos trabalhos</p>
+        <h2 class="section__title">Galeria de <span>cortes</span></h2>
+        <p class="section__lead">Um pouquinho do que sai todos os dias da cadeira da El Chapo.</p>
+      </div>
+
+      <div class="galeria__grid" id="galeriaGrid">
+        <!-- Preenchido via JS -->
+      </div>
+
+      <div class="galeria__cta reveal">
+        <a href="https://www.instagram.com/elchapobarber1/" target="_blank" rel="noopener" class="btn btn--ghost">Ver mais no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AGENDAMENTO ===================== -->
+  <section class="section agendar" id="agendar">
+    <div class="container agendar__grid">
+      <div class="agendar__intro reveal">
+        <p class="section__eyebrow">Reserve agora</p>
+        <h2 class="section__title">Garanta sua <span>vaga</span></h2>
+        <p>Monte seu agendamento abaixo. Vamos gerar a mensagem pronta e te levar direto pro WhatsApp do barbeiro escolhido. É só enviar. 💈</p>
+        <ul class="agendar__perks">
+          <li>✓ Sem cadastro, sem complicação</li>
+          <li>✓ Confirmação direto com o barbeiro</li>
+          <li>✓ Resposta rápida no WhatsApp</li>
+        </ul>
+      </div>
+
+      <form class="agendar__form reveal" id="formAgendar">
+        <div class="field">
+          <label for="fNome">Seu nome</label>
+          <input type="text" id="fNome" placeholder="Como podemos te chamar?" autocomplete="name" />
+        </div>
+
+        <div class="field">
+          <label for="fBarbeiro">Barbeiro</label>
+          <select id="fBarbeiro" required>
+            <option value="">Selecione um barbeiro</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="fServico">Serviço</label>
+          <select id="fServico">
+            <option value="">Selecione um serviço</option>
+          </select>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fData">Dia</label>
+            <input type="date" id="fData" required />
+          </div>
+          <div class="field">
+            <label for="fHora">Horário</label>
+            <select id="fHora" required>
+              <option value="">Selecione</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--whatsapp btn--block">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+          Gerar reserva no WhatsApp
+        </button>
+        <p class="agendar__hint">Você revisa a mensagem antes de enviar. Nada é cobrado.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section class="section depoimentos">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Satisfação de verdade</p>
+        <h2 class="section__title">O que dizem os <span>clientes</span></h2>
+      </div>
+      <div class="depo-carousel reveal" id="depoCarousel">
+        <div class="depo-carousel__viewport">
+          <div class="depo-carousel__track" id="depoTrack">
+            <!-- Preenchido via JS -->
+          </div>
+        </div>
+        <div class="depo-carousel__dots" id="depoDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOCALIZAÇÃO ===================== -->
+  <section class="section localizacao" id="localizacao">
+    <div class="container localizacao__grid">
+      <div class="localizacao__info reveal">
+        <p class="section__eyebrow">Onde estamos</p>
+        <h2 class="section__title">Venha nos <span>visitar</span></h2>
+        <ul class="localizacao__list">
+          <li>
+            <span class="ico">📍</span>
+            <div><strong>Endereço</strong>R. Barão de São João Nepomuceno, 29 — Centro<br />Juiz de Fora / MG · 36010-080<br /><em>Ao lado da Local Eletrônica</em></div>
+          </li>
+          <li>
+            <span class="ico">🕗</span>
+            <div><strong>Horário</strong>Segunda a Sexta: 08h às 20h<br />Sábado: 08h às 16h</div>
+          </li>
+          <li>
+            <span class="ico">🅿️</span>
+            <div><strong>Estacionamento</strong>Parceria Cesar Park — coberto, monitorado e com manobrista, por apenas R$8.</div>
+          </li>
+        </ul>
+        <div class="localizacao__actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=R.+Bar%C3%A3o+de+S%C3%A3o+Jo%C3%A3o+Nepomuceno+29+Centro+Juiz+de+Fora+MG" target="_blank" rel="noopener" class="btn btn--gold">Como chegar</a>
+          <a id="ctaWhatsTopo" href="#" target="_blank" rel="noopener" class="btn btn--ghost">Chamar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="localizacao__map reveal">
+        <iframe
+          title="Mapa El Chapo Barber"
+          src="https://www.google.com/maps?q=R.%20Bar%C3%A3o%20de%20S%C3%A3o%20Jo%C3%A3o%20Nepomuceno%2C%2029%20-%20Centro%2C%20Juiz%20de%20Fora%20-%20MG%2C%2036010-080&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final">
+    <div class="container cta-final__inner reveal">
+      <h2>Bora mudar o visual hoje?</h2>
+      <p>Garanta sua vaga com os barbeiros mais brabos de Juiz de Fora.</p>
+      <a href="#agendar" class="btn btn--gold btn--lg">Reservar meu horário</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="Assets/logodourada.png" alt="El Chapo Barber" />
+        <p>Autoestima e estilo elevado ao mais alto nível.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#barbeiros">Barbeiros</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#agendar">Agendar</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a id="footerWhats1" href="#" target="_blank" rel="noopener">WhatsApp (32) 98856-5053</a>
+        <a id="footerWhats2" href="#" target="_blank" rel="noopener">WhatsApp (32) 98403-6401</a>
+        <a href="https://www.instagram.com/elchapobarber1/" target="_blank" rel="noopener">@elchapobarber1</a>
+      </div>
+      <div class="footer__col">
+        <h4>Horário</h4>
+        <p>Seg–Sex: 08h–20h<br />Sábado: 08h–16h<br />Domingo: fechado</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> El Chapo Barber · Juiz de Fora / MG · Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a id="whatsFloat" href="#" target="_blank" rel="noopener" class="whats-float" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
